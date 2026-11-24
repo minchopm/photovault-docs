@@ -94,7 +94,9 @@ In an instrumented physical-device run built from the App Store `1.0 (30)` sourc
 
 ---
 
-## 5. Comparisons & Guides
+## 5. Comparisons, v1.0.1 Compact Mode & Black Friday 2026 Deals
+
+- **Black Friday & Cyber Monday 2026 (Nov 24 – Dec 2):** **50% OFF Family Yearly (`$19.99` 1st yr, reg. `$39.99/yr` — up to 6 people via Apple Family Sharing)** & **25% OFF Personal Yearly (`$14.99` 1st yr, reg. `$19.99/yr`)** — [Official Deal Breakdown](https://photovault.arte-soft.com/deals/black-friday-2026/) · [2026 iPhone Vault Deals Matrix](https://photovault.arte-soft.com/guides/best-black-friday-iphone-photo-vault-and-storage-deals-2026/)
 
 - [PhotoVault Security Overview](https://photovault.arte-soft.com/security/)
 - [Secure Share & `.pvsecure` Workflow](https://photovault.arte-soft.com/features/secure-sharing/)
