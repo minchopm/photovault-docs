@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PhotoVault: Encrypt &amp; Compress (v1.0.1) — PVSHAR01 (.pvsecure) Specification &amp; Security Docs</title>
+  <meta name="description" content="Open PVSHAR01 (.pvsecure) binary envelope specification, 600,000-round PBKDF2-HMAC-SHA256 + AES-256-GCM verification, Compact Mode vs Lossless Mode matrix, and Android/iPhone security docs for PhotoVault." />
+  <link rel="canonical" href="https://minchopm.github.io/photovault-docs/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PhotoVault: Encrypt & Compress",
+    "softwareVersion": "1.0.1",
+    "operatingSystem": "iOS 26+, iPadOS 26+, Android",
+    "applicationCategory": "UtilitiesApplication",
+    "url": "https://photovault.arte-soft.com/",
+    "downloadUrl": "https://apps.apple.com/us/app/photovault-encrypt-compress/id6824412013",
+    "sameAs": [
+      "https://photovault.arte-soft.com/",
+      "https://apps.apple.com/us/app/photovault-encrypt-compress/id6824412013",
+      "https://github.com/minchopm/photovault-docs",
+      "https://artesoft.hashnode.dev/encrypting-and-compressing-photos-on-device-aes-256-gcm-and-hevc-compact-vaults"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Arte Soft EOOD",
+      "url": "https://arte-soft.com/"
+    }
+  }
+  </script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 2.5rem auto; padding: 0 1.25rem; line-height: 1.65; color: #0f172a; }
+    table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; }
+    th, td { border: 1px solid #cbd5e1; padding: 0.65rem 0.8rem; text-align: left; }
+    th { background: #f8fafc; }
+    code { background: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 4px; }
+    a { color: #0284c7; }
+  </style>
+</head>
+<body>
+  <h1>PhotoVault: Encrypt &amp; Compress (v1.0.1) — Security &amp; PVSHAR01 Format Docs</h1>
+  <p>Official portal: <a href="https://photovault.arte-soft.com/">photovault.arte-soft.com</a> · <a href="https://apps.apple.com/us/app/photovault-encrypt-compress/id6824412013">App Store (id6824412013)</a> · <a href="https://photovault.arte-soft.com/android/">Android</a> · <a href="https://github.com/minchopm/photovault-docs">GitHub Repository &amp; Python Verifier</a></p>
+  <h2>Storage Modes &amp; Cryptographic Architecture</h2>
+  <table>
+    <thead><tr><th>Layer</th><th>Specification</th></tr></thead>
+    <tbody>
+      <tr><th>Local Vault Cipher</th><td><code>AES-256-GCM</code> media &amp; OCR/metadata index; installation key bound in iOS Keychain / Android Keystore</td></tr>
+      <tr><th>Import Modes (v1.0.1 Live)</th><td><strong>Compact Mode</strong> (on-device hardware encoding prior to AES-256-GCM) &amp; <strong>Lossless Mode</strong> (exact bytes)</td></tr>
+      <tr><th>Portable <code>.pvsecure</code> (<code>PVSHAR01</code>)</th><td>72-byte big-endian authenticated header + 600,000-round <code>PBKDF2-HMAC-SHA256</code> (32B salt) + 1 MiB chunked <code>AES-256-GCM</code></td></tr>
+      <tr><th>Privacy &amp; Ad SDK Posture</th><td>No Arte Soft account, no cloud photo servers, and no Google AdMob SDK</td></tr>
+    </tbody>
+  </table>
+  <h2>2026 Comparison Matrices</h2>
+  <ul>
+    <li><a href="https://photovault.arte-soft.com/guides/compact-mode-vs-lossless-vault-iphone-1-0-1/">PhotoVault 1.0.1 Compact Mode vs Lossless Mode on iPhone</a></li>
+    <li><a href="https://photovault.arte-soft.com/guides/google-photos-locked-folder-vs-samsung-secure-folder-vs-photovault/">Google Photos Locked Folder vs Samsung Secure Folder vs PhotoVault</a></li>
+    <li><a href="https://photovault.arte-soft.com/guides/icloud-photos-optimize-storage-vs-offline-compressed-vault/">iCloud Photos 'Optimize iPhone Storage' vs Offline Encrypted Compressed Vault</a></li>
+    <li><a href="https://photovault.arte-soft.com/guides/encrypted-photo-archive-for-travel-border-and-device-repair/">Protecting Private Photos Before Phone Repair, Trade-In, or Travel</a></li>
+  </ul>
+</body>
+</html>
