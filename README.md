@@ -108,3 +108,19 @@ In an instrumented physical-device run built from the App Store `1.0 (30)` sourc
 ## License
 
 Documentation and `inspect_pvsecure.py` in this repository are released under the MIT License. **PhotoVault: Encrypt & Compress** is © Arte Soft EOOD.
+
+---
+
+## PhotoVault 1.0.1 Update: Compact Mode Live on App Store + Android Vault Rollout
+
+- **App Store (`v1.0.1` LIVE):** [https://apps.apple.com/us/app/photovault-encrypt-compress/id6824412013](https://apps.apple.com/us/app/photovault-encrypt-compress/id6824412013) — both **Compact mode** (on-device media compression prior to `AES-256-GCM` encryption) and **Lossless mode** (exact original bytes) are live!
+- **Encrypted & Compressed Archive Overview:** [https://photovault.arte-soft.com/features/encrypted-compressed-archive/](https://photovault.arte-soft.com/features/encrypted-compressed-archive/)
+- **PhotoVault for Android:** [https://photovault.arte-soft.com/android/](https://photovault.arte-soft.com/android/)
+- **Engineering Deep-Dive:** [Encrypting and Compressing Photos On-Device: AES-256-GCM & Compact Vaults](https://artesoft.hashnode.dev/encrypting-and-compressing-photos-on-device-aes-256-gcm-and-hevc-compact-vaults)
+
+### 2026 Comparison Matrices (`v1.0.1` + Android)
+- [PhotoVault 1.0.1 Compact Mode vs Lossless Mode on iPhone](https://photovault.arte-soft.com/guides/compact-mode-vs-lossless-vault-iphone-1-0-1/)
+- [Google Photos Locked Folder vs Samsung Secure Folder vs PhotoVault (2026 Matrix)](https://photovault.arte-soft.com/guides/google-photos-locked-folder-vs-samsung-secure-folder-vs-photovault/)
+- [iCloud Photos 'Optimize iPhone Storage' vs Offline Encrypted Compressed Vault](https://photovault.arte-soft.com/guides/icloud-photos-optimize-storage-vs-offline-compressed-vault/)
+- [Protecting Private Photos Before Phone Repair, Trade-In, or Travel (`.pvsecure` Checklist)](https://photovault.arte-soft.com/guides/encrypted-photo-archive-for-travel-border-and-device-repair/)
+
